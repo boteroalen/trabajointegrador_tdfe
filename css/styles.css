@@ -126,6 +126,155 @@ h3 {
   margin-left: 3%;
 }
 
+.seccion {
+  margin-bottom: 48px;
+}
+
+.titulo-seccion {
+  font-size: 34px;
+  margin-bottom: 16px;
+}
+
+.bajada {
+  color: #6f6458;
+  margin-bottom: 20px;
+}
+
+.grilla {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tarjeta {
+  width: 23%;
+  margin: 0% 1% 20px 1%;
+  background-color: #faf6ef;
+  padding: 14px;
+}
+
+.foto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+  background-color: #ffffff;
+  padding: 10px;
+  margin-bottom: 12px;
+}
+
+.foto img {
+  max-width: 100%;
+  max-height: 160px;
+}
+
+.tarjeta h3 {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.descripcion {
+  color: #6f6458;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.precio {
+  font-weight: 700;
+  color: #8b5e3c;
+  margin-bottom: 12px;
+}
+
+.boton {
+  display: inline-block;
+  border: 1px solid #8b5e3c;
+  color: #8b5e3c;
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+.detalle {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-bottom: 48px;
+}
+
+.detalle-foto {
+  width: 42%;
+  background-color: #ffffff;
+  padding: 24px;
+}
+
+.detalle-foto img {
+  display: block;
+  max-width: 100%;
+  max-height: 380px;
+  margin: 0 auto;
+}
+
+.detalle-info {
+  width: 53%;
+  margin-left: 5%;
+}
+
+.marca {
+  color: #6f6458;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.detalle-info h1 {
+  font-size: 48px;
+  margin-bottom: 8px;
+}
+
+.precio-grande {
+  font-size: 26px;
+  font-weight: 700;
+  color: #8b5e3c;
+  margin-bottom: 16px;
+}
+
+.detalle-info .descripcion {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.dato {
+  margin-bottom: 8px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.tags li {
+  background-color: #e8dccb;
+  color: #5c3f28;
+  padding: 4px 12px;
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.review {
+  background-color: #faf6ef;
+  padding: 16px 20px;
+  margin-bottom: 12px;
+}
+
+.rating {
+  color: #8b5e3c;
+  margin-bottom: 6px;
+}
+
+.review-datos {
+  color: #6f6458;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
 .pie {
   background-color: #2e2721;
   color: #f2ebe0;
