@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", Arial, sans-serif;
+  background-color: #f2ebe0;
+  color: #2e2721;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #8b5e3c;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 600;
+}
+
+.contenedor {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.cabecera {
+  background-color: #faf6ef;
+  padding: 16px 0px;
+}
+
+.cabecera .contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 48px;
+  height: 48px;
+}
+
+.logo-texto {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #2e2721;
+  margin-left: 10px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  margin: 0px 14px;
+}
+
+.menu a {
+  color: #2e2721;
+  font-weight: 500;
+}
+
+.buscador {
+  display: flex;
+}
+
+.buscador input {
+  padding: 8px 12px;
+  border: 1px solid #d8cbb8;
+  background-color: #ffffff;
+  font-family: "Karla", Arial, sans-serif;
+  font-size: 15px;
+}
+
+.buscador button {
+  padding: 8px 16px;
+  border: 1px solid #8b5e3c;
+  background-color: #8b5e3c;
+  color: #faf6ef;
+  font-family: "Karla", Arial, sans-serif;
+  font-size: 15px;
+}
+
+.cuerpo {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 32px;
+  margin-bottom: 48px;
+}
+
+.categorias {
+  width: 20%;
+  background-color: #faf6ef;
+  padding: 20px;
+}
+
+.categorias h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.categorias a {
+  display: block;
+  color: #6f6458;
+  padding: 4px 0px;
+  font-size: 15px;
+}
+
+.principal {
+  width: 77%;
+  margin-left: 3%;
+}
+
+.pie {
+  background-color: #2e2721;
+  color: #f2ebe0;
+  padding: 32px 0px;
+}
+
+.pie .contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pie-marca {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 22px;
+}
+
+.integrantes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.integrantes li {
+  margin-left: 24px;
+  font-size: 15px;
+}
