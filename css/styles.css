@@ -275,6 +275,71 @@ h3 {
   margin-top: 8px;
 }
 
+.sin-resultados {
+  background-color: #e8dccb;
+  color: #5c3f28;
+  padding: 16px 20px;
+  margin-top: 12px;
+}
+
+.centrado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 560px;
+}
+
+.formulario {
+  width: 55%;
+  background-color: #faf6ef;
+  padding: 32px;
+}
+
+.formulario label {
+  display: block;
+  font-size: 14px;
+  color: #6f6458;
+  margin-bottom: 6px;
+}
+
+.control {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 16px;
+  border: 1px solid #d8cbb8;
+  background-color: #ffffff;
+  font-family: "Karla", Arial, sans-serif;
+  font-size: 15px;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.check label {
+  margin: 0px 0px 0px 8px;
+}
+
+.boton-lleno {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #8b5e3c;
+  background-color: #8b5e3c;
+  color: #faf6ef;
+  font-family: "Karla", Arial, sans-serif;
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+
+.link-form {
+  display: block;
+  text-align: center;
+  font-size: 15px;
+}
+
 .pie {
   background-color: #2e2721;
   color: #f2ebe0;
