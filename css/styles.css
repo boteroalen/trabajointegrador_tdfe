@@ -367,3 +367,79 @@ h3 {
   margin-left: 24px;
   font-size: 15px;
 }
+
+@media (max-width: 900px) {
+  .tarjeta {
+    width: 31.33%;
+  }
+
+  .formulario {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .cabecera .contenedor {
+    justify-content: center;
+  }
+
+  .menu {
+    margin: 14px 0px;
+  }
+
+  .cuerpo {
+    flex-wrap: wrap;
+  }
+
+  .categorias,
+  .principal,
+  .detalle-foto,
+  .detalle-info,
+  .formulario {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .categorias {
+    margin-bottom: 24px;
+  }
+
+  .tarjeta {
+    width: 48%;
+  }
+
+  .foto {
+    height: 130px;
+  }
+
+  .foto img {
+    max-height: 110px;
+  }
+
+  .detalle-foto img {
+    max-height: 260px;
+  }
+
+  .detalle-info {
+    margin-top: 20px;
+  }
+
+  .centrado {
+    height: auto;
+    padding: 24px 0px;
+  }
+
+  .pie .contenedor {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .integrantes {
+    justify-content: center;
+    margin-top: 12px;
+  }
+
+  .integrantes li {
+    margin: 0px 10px;
+  }
+}
