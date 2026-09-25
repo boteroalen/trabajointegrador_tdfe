@@ -20,8 +20,16 @@ ul {
   list-style: none;
 }
 
-h1,
-h2,
+h1 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 600;
+}
+
+h2 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 600;
+}
+
 h3 {
   font-family: "Cormorant Garamond", Georgia, serif;
   font-weight: 600;
@@ -391,10 +399,26 @@ h3 {
     flex-wrap: wrap;
   }
 
-  .categorias,
-  .principal,
-  .detalle-foto,
-  .detalle-info,
+  .categorias {
+    width: 100%;
+    margin-left: 0px;
+  }
+  
+  .principal {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .detalle-foto {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .detalle-info {
+    width: 100%;
+    margin-left: 0px;
+  }
+
   .formulario {
     width: 100%;
     margin-left: 0px;
