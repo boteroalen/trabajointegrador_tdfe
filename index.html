@@ -13,21 +13,24 @@
 
   <header class="cabecera">
     <div class="contenedor">
-      <a href="./index.html" class="logo">
+      <a href="index.html" class="logo">
         <img src="./img/logo.jpg" alt="Logo de Aurea">
         <span class="logo-texto">Aurea</span>
       </a>
       <nav>
         <ul class="menu">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./login.html">Login</a></li>
-          <li><a href="register.html">Registro</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li id="item-login"><a href="login.html">Login</a></li>
+          <li id="item-registro"><a href="register.html">Registro</a></li>
+          <li id="saludo">Bienvenido: <span id="email-usuario"></span></li>
+          <li id="item-logout"><a href="#" id="logout">logout</a></li>
         </ul>
       </nav>
-      <form class="buscador" action="search-results.html" method="get" value="">
-        <input type="text" name="busqueda" placeholder="Buscar perfumes">
+      <form class="buscador" id="form-buscador" action="search-results.html" method="get">
+        <input type="text" name="busqueda" id="campo-busqueda" placeholder="Buscar productos">
         <button type="submit">Buscar</button>
       </form>
+      <p class="error error-busqueda" id="error-busqueda"></p>
     </div>
   </header>
 
@@ -35,226 +38,21 @@
 
     <aside class="categorias">
       <h2>Categorías</h2>
-      <ul>
-        <li><a href="./category.html">Beauty</a></li>
-        <li><a href="./category.html">Fragrances</a></li>
-        <li><a href="./category.html">Furniture</a></li>
-        <li><a href="./category.html">Groceries</a></li>
-        <li><a href="./category.html">Home</a></li>
-        <li><a href="./category.html">Decoration</a></li>
-        <li><a href="./category.html">Kitchen accessories</a></li>
-        <li><a href="./category.html">Laptops</a></li>
-        <li><a href="./category.html">Mens shirts</a></li>
-        <li><a href="./category.html">Men shoes</a></li>
-        <li><a href="./category.html">Mens watches</a></li>
-        <li><a href="./category.html">Mobile accessories</a></li>
-        <li><a href="./category.html">Motorcycle</a></li>
-        <li><a href="./category.html">Skin care</a></li>
-        <li><a href="./category.html">Smartphones</a></li>
-        <li><a href="./category.html">Sports accessories</a></li>
-        <li><a href="./category.html">Sunglasses</a></li>
-        <li><a href="./category.html">Tablets</a></li>
-        <li><a href="./category.html">Tops</a></li>
-        <li><a href="./category.html">Vehicle</a></li>
-        <li><a href="./category.html">Womens bags</a></li>
-        <li><a href="./category.html">Womens dresses</a></li>
-        <li><a href="./category.html">Womens jewellery</a></li>
-        <li><a href="./category.html">Womens shoes</a></li>
-        <li><a href="./category.html">Womens watches</a></li>
+      <ul id="lista-categorias">
       </ul>
     </aside>
 
     <main class="principal">
 
       <section class="seccion">
-        <h2 class="titulo-seccion">Productos aleatorios</h2>
-        <div class="grilla">
-          <article class="tarjeta">
-            <div class="foto">
-              <img src="./img/perfume-06.png" alt="Frasco de Miss Dior de Dior">
-            </div>
-            <h3>Miss Dior</h3>
-            <p class="descripcion">Rosa de Grasse y almizcle, fresco y romántico.</p>
-            <p class="precio">$ 134.700</p>
-            <a href="./product.html" class="boton">ver detalle</a>
-          </article>
-          <article class="tarjeta">
-            <div class="foto">
-              <img src="./img/perfume-14.png" alt="Frasco de 212 Men de Carolina Herrera">
-            </div>
-            <h3>212 Men</h3>
-            <p class="descripcion">Especias verdes, jengibre y almizcle limpio.</p>
-            <p class="precio">$ 79.900</p>
-            <a href="./product.html" class="boton">ver detalle</a>
-          </article>
-          <article class="tarjeta">
-            <div class="foto">
-              <img src="./img/perfume-10.png" alt="Frasco de La Vie est Belle de Lancôme">
-            </div>
-            <h3>La Vie est Belle</h3>
-            <p class="descripcion">Iris, praliné y vainilla, el gourmand más elegido.</p>
-            <p class="precio">$ 118.600</p>
-            <a href="./product.html" class="boton">ver detalle</a>
-          </article>
-          <article class="tarjeta">
-            <div class="foto">
-              <img src="./img/perfume-17.png" alt="Frasco de Hero Parfum de Burberry">
-            </div>
-            <h3>Hero Parfum</h3>
-            <p class="descripcion">Cedro, bergamota y enebro, amaderado y seco.</p>
-            <p class="precio">$ 115.200</p>
-            <a href="./product.html" class="boton">ver detalle</a>
-          </article>
-          <article class="tarjeta">
-            <div class="foto">
-              <img src="./img/perfume-04.png" alt="Frasco de Amour de Kenzo">
-            </div>
-            <h3>Amour</h3>
-            <p class="descripcion">Arroz blanco, flor de cerezo y vainilla, suave y envolvente.</p>
-            <p class="precio">$ 74.300</p>
-            <a href="./product.html" class="boton">ver detalle</a>
-          </article>
-          <article class="tarjeta">
-            <div class="foto">
-              <img src="./img/perfume-12.png" alt="Frasco de Ombré Leather de Tom Ford">
-            </div>
-            <h3>Ombré Leather</h3>
-            <p class="descripcion">Cuero, cardamomo y jazmín, profundo y ahumado.</p>
-            <p class="precio">$ 176.400</p>
-            <a href="./product.html" class="boton">ver detalle</a>
-          </article>
-          <article class="tarjeta">
-            <div class="foto">
-              <img src="./img/perfume-20.png" alt="Frasco de Aqua Allegoria de Guerlain">
-            </div>
-            <h3>Aqua Allegoria</h3>
-            <p class="descripcion">Cítricos y notas verdes, ligero y luminoso.</p>
-            <p class="precio">$ 96.100</p>
-            <a href="./product.html" class="boton">ver detalle</a>
-          </article>
-          <article class="tarjeta">
-            <div class="foto">
-              <img src="./img/perfume-07.png" alt="Frasco de Escape de Calvin Klein">
-            </div>
-            <h3>Escape</h3>
-            <p class="descripcion">Clásico floral con notas de manzana y sándalo.</p>
-            <p class="precio">$ 58.400</p>
-            <a href="./product.html" class="boton">ver detalle</a>
-          </article>
-          <article class="tarjeta">
-            <div class="foto">
-              <img src="./img/perfume-19.png" alt="Frasco de MYSLF de Yves Saint Laurent">
-            </div>
-            <h3>MYSLF</h3>
-            <p class="descripcion">Flor de azahar y pachulí, amaderado floral.</p>
-            <p class="precio">$ 126.700</p>
-            <a href="./product.html" class="boton">ver detalle</a>
-          </article>
-          <article class="tarjeta">
-            <div class="foto">
-              <img src="./img/perfume-13.png" alt="Frasco de Polo Blue de Ralph Lauren">
-            </div>
-            <h3>Polo Blue</h3>
-            <p class="descripcion">Melón, pepino y gamuza, fresco y deportivo.</p>
-            <p class="precio">$ 82.500</p>
-            <a href="./product.html" class="boton">ver detalle</a>
-          </article>
+        <h2 class="titulo-seccion">Perfumes</h2>
+        <div class="grilla" id="grilla-uno">
         </div>
       </section>
 
       <section class="seccion">
-        <h2 class="titulo-seccion">Más vendidos</h2>
-        <div class="grilla">
-          <article class="tarjeta">
-            <div class="foto">
-              <img src="./img/perfume-08.png" alt="Frasco de So Scandal de Jean Paul Gaultier">
-            </div>
-            <h3>So Scandal</h3>
-            <p class="descripcion">Flor de azahar, tuberosa y leche, dulce y audaz.</p>
-            <p class="precio">$ 109.900</p>
-            <a href="./product.html" class="boton">ver detalle</a>
-          </article>
-          <article class="tarjeta">
-            <div class="foto">
-              <img src="./img/perfume-15.png" alt="Frasco de Scandal pour Homme de Jean Paul Gaultier">
-            </div>
-            <h3>Scandal pour Homme</h3>
-            <p class="descripcion">Caramelo, salvia y haba tonka, cálido y masculino.</p>
-            <p class="precio">$ 104.300</p>
-            <a href="./product.html" class="boton">ver detalle</a>
-          </article>
-          <article class="tarjeta">
-            <div class="foto">
-              <img src="./img/perfume-05.png" alt="Frasco de Libre Intense de Yves Saint Laurent">
-            </div>
-            <h3>Libre Intense</h3>
-            <p class="descripcion">Lavanda y flor de azahar con un fondo de vainilla intensa.</p>
-            <p class="precio">$ 128.900</p>
-            <a href="./product.html" class="boton">ver detalle</a>
-          </article>
-          <article class="tarjeta">
-            <div class="foto">
-              <img src="./img/perfume-10.png" alt="Frasco de La Vie est Belle de Lancôme">
-            </div>
-            <h3>La Vie est Belle</h3>
-            <p class="descripcion">Iris, praliné y vainilla, el gourmand más elegido.</p>
-            <p class="precio">$ 118.600</p>
-            <a href="./product.html" class="boton">ver detalle</a>
-          </article>
-          <article class="tarjeta">
-            <div class="foto">
-              <img src="./img/perfume-18.png" alt="Frasco de Born in Roma Intense de Valentino">
-            </div>
-            <h3>Born in Roma Intense</h3>
-            <p class="descripcion">Vainilla, lavanda y vetiver en versión intensa.</p>
-            <p class="precio">$ 138.500</p>
-            <a href="./product.html" class="boton">ver detalle</a>
-          </article>
-          <article class="tarjeta">
-            <div class="foto">
-              <img src="./img/perfume-03.png" alt="Frasco de Goddess de Burberry">
-            </div>
-            <h3>Goddess</h3>
-            <p class="descripcion">Vainilla y lavanda en un eau de parfum cálido y luminoso.</p>
-            <p class="precio">$ 112.500</p>
-            <a href="./product.html" class="boton">ver detalle</a>
-          </article>
-          <article class="tarjeta">
-            <div class="foto">
-              <img src="./img/perfume-09.png" alt="Frasco de J'adore de Dior">
-            </div>
-            <h3>J'adore</h3>
-            <p class="descripcion">Ylang-ylang, jazmín y rosa en un floral dorado.</p>
-            <p class="precio">$ 141.200</p>
-            <a href="./product.html" class="boton">ver detalle</a>
-          </article>
-          <article class="tarjeta">
-            <div class="foto">
-              <img src="./img/perfume-11.png" alt="Frasco de Kenzo Homme de Kenzo">
-            </div>
-            <h3>Kenzo Homme</h3>
-            <p class="descripcion">Acuático amaderado con notas marinas y cedro.</p>
-            <p class="precio">$ 69.800</p>
-            <a href="./product.html" class="boton">ver detalle</a>
-          </article>
-          <article class="tarjeta">
-            <div class="foto">
-              <img src="./img/perfume-01.png" alt="Frasco de Angel Nova de Mugler">
-            </div>
-            <h3>Angel Nova</h3>
-            <p class="descripcion">Floral frutal con rosa y frambuesa, en su frasco estrella.</p>
-            <p class="precio">$ 89.900</p>
-            <a href="./product.html" class="boton">ver detalle</a>
-          </article>
-          <article class="tarjeta">
-            <div class="foto">
-              <img src="./img/perfume-16.png" alt="Frasco de Prada Milano de Prada">
-            </div>
-            <h3>Prada Milano</h3>
-            <p class="descripcion">Notas verdes y aromáticas con fondo amaderado.</p>
-            <p class="precio">$ 121.800</p>
-            <a href="./product.html" class="boton">ver detalle</a>
-          </article>
+        <h2 class="titulo-seccion">Smartphones</h2>
+        <div class="grilla" id="grilla-dos">
         </div>
       </section>
 
@@ -264,7 +62,7 @@
 
   <footer class="pie">
     <div class="contenedor">
-      <p class="pie-marca">Aurea · Perfumes de autor</p>
+      <p class="pie-marca">Aurea · Tienda online</p>
       <ul class="integrantes">
         <li>Carnevale Isabella</li>
         <li>Goity Zapico Felicitas</li>
@@ -272,6 +70,5 @@
       </ul>
     </div>
   </footer>
-
 </body>
 </html>
