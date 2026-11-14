@@ -13,21 +13,24 @@
 
   <header class="cabecera">
     <div class="contenedor">
-      <a href="./index.html" class="logo">
+      <a href="index.html" class="logo">
         <img src="./img/logo.jpg" alt="Logo de Aurea">
         <span class="logo-texto">Aurea</span>
       </a>
       <nav>
         <ul class="menu">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./login.html">Login</a></li>
-          <li><a href="./register.html">Registro</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li id="item-login"><a href="login.html">Login</a></li>
+          <li id="item-registro"><a href="register.html">Registro</a></li>
+          <li id="saludo">Bienvenido: <span id="email-usuario"></span></li>
+          <li id="item-logout"><a href="#" id="logout">logout</a></li>
         </ul>
       </nav>
-      <form class="buscador" action="./search-results.html" method="get" value="">
-        <input type="text" name="busqueda" placeholder="Buscar perfumes">
+      <form class="buscador" id="form-buscador" action="search-results.html" method="get">
+        <input type="text" name="busqueda" id="campo-busqueda" placeholder="Buscar productos">
         <button type="submit">Buscar</button>
       </form>
+      <p class="error error-busqueda" id="error-busqueda"></p>
     </div>
   </header>
 
@@ -35,61 +38,17 @@
 
     <aside class="categorias">
       <h2>Categorías</h2>
-      <ul>
-        <li><a href="./category.html">Beauty</a></li>
-        <li><a href="./category.html">Fragrances</a></li>
-        <li><a href="./category.html">Furniture</a></li>
-        <li><a href="./category.html">Groceries</a></li>
-        <li><a href="./category.html">Home</a></li>
-        <li><a href="./category.html">Decoration</a></li>
-        <li><a href="./category.html">Kitchen accessories</a></li>
-        <li><a href="./category.html">Laptops</a></li>
-        <li><a href="./category.html">Mens shirts</a></li>
-        <li><a href="./category.html">Men shoes</a></li>
-        <li><a href="./category.html">Mens watches</a></li>
-        <li><a href="./category.html">Mobile accessories</a></li>
-        <li><a href="./category.html">Motorcycle</a></li>
-        <li><a href="./category.html">Skin care</a></li>
-        <li><a href="./category.html">Smartphones</a></li>
-        <li><a href="./category.html">Sports accessories</a></li>
-        <li><a href="./category.html">Sunglasses</a></li>
-        <li><a href="./category.html">Tablets</a></li>
-        <li><a href="./category.html">Tops</a></li>
-        <li><a href="./category.html">Vehicle</a></li>
-        <li><a href="./category.html">Womens bags</a></li>
-        <li><a href="./category.html">Womens dresses</a></li>
-        <li><a href="./category.html">Womens jewellery</a></li>
-        <li><a href="./category.html">Womens shoes</a></li>
-        <li><a href="./category.html">Womens watches</a></li>
+      <ul id="lista-categorias">
       </ul>
     </aside>
 
     <main class="principal">
 
       <section class="seccion">
-        <h1 class="titulo-seccion">Resultados de búsqueda</h1>
-        <p class="bajada">Buscaste: <strong>scandal</strong></p>
-        <div class="grilla">
-          <article class="tarjeta">
-            <div class="foto">
-              <img src="./img/perfume-08.png" alt="Frasco de So Scandal de Jean Paul Gaultier">
-            </div>
-            <h3>So Scandal</h3>
-            <p class="descripcion">Flor de azahar, tuberosa y leche, dulce y audaz.</p>
-            <p class="precio">$ 109.900</p>
-            <a href="./product.html" class="boton">ver detalle</a>
-          </article>
-          <article class="tarjeta">
-            <div class="foto">
-              <img src="./img/perfume-15.png" alt="Frasco de Scandal pour Homme de Jean Paul Gaultier">
-            </div>
-            <h3>Scandal pour Homme</h3>
-            <p class="descripcion">Caramelo, salvia y haba tonka, cálido y masculino.</p>
-            <p class="precio">$ 104.300</p>
-            <a href="./product.html" class="boton">ver detalle</a>
-          </article>
+        <h1 class="titulo-seccion">Resultados de búsqueda para: <span id="termino"></span></h1>
+        <div class="grilla" id="grilla-resultados">
         </div>
-        <p class="sin-resultados">No encontramos productos que coincidan con tu búsqueda. Probá con otra palabra o revisá las categorías.</p>
+        <p class="sin-resultados" id="sin-resultados"></p>
       </section>
 
     </main>
@@ -98,7 +57,7 @@
 
   <footer class="pie">
     <div class="contenedor">
-      <p class="pie-marca">Aurea · Perfumes de autor</p>
+      <p class="pie-marca">Aurea · Tienda online</p>
       <ul class="integrantes">
         <li>Carnevale Isabella</li>
         <li>Goity Zapico Felicitas</li>
@@ -106,6 +65,5 @@
       </ul>
     </div>
   </footer>
-
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>So Scandal - Aurea</title>
+  <title>Detalle - Aurea</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
@@ -13,21 +13,24 @@
 
   <header class="cabecera">
     <div class="contenedor">
-      <a href="./index.html" class="logo">
+      <a href="index.html" class="logo">
         <img src="./img/logo.jpg" alt="Logo de Aurea">
         <span class="logo-texto">Aurea</span>
       </a>
       <nav>
         <ul class="menu">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./login.html">Login</a></li>
-          <li><a href="./register.html">Registro</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li id="item-login"><a href="login.html">Login</a></li>
+          <li id="item-registro"><a href="register.html">Registro</a></li>
+          <li id="saludo">Bienvenido: <span id="email-usuario"></span></li>
+          <li id="item-logout"><a href="#" id="logout">logout</a></li>
         </ul>
       </nav>
-      <form class="buscador" action="./search-results.html" method="get" value="">
-        <input type="text" name="busqueda" placeholder="Buscar perfumes">
+      <form class="buscador" id="form-buscador" action="search-results.html" method="get">
+        <input type="text" name="busqueda" id="campo-busqueda" placeholder="Buscar productos">
         <button type="submit">Buscar</button>
       </form>
+      <p class="error error-busqueda" id="error-busqueda"></p>
     </div>
   </header>
 
@@ -35,73 +38,32 @@
 
     <aside class="categorias">
       <h2>Categorías</h2>
-      <ul>
-        <li><a href="./category.html">Beauty</a></li>
-        <li><a href="./category.html">Fragrances</a></li>
-        <li><a href="./category.html">Furniture</a></li>
-        <li><a href="./category.html">Groceries</a></li>
-        <li><a href="./category.html">Home</a></li>
-        <li><a href="./category.html">Decoration</a></li>
-        <li><a href="./category.html">Kitchen accessories</a></li>
-        <li><a href="./category.html">Laptops</a></li>
-        <li><a href="./category.html">Mens shirts</a></li>
-        <li><a href="./category.html">Men shoes</a></li>
-        <li><a href="./category.html">Mens watches</a></li>
-        <li><a href="./category.html">Mobile accessories</a></li>
-        <li><a href="./category.html">Motorcycle</a></li>
-        <li><a href="./category.html">Skin care</a></li>
-        <li><a href="./category.html">Smartphones</a></li>
-        <li><a href="./category.html">Sports accessories</a></li>
-        <li><a href="./category.html">Sunglasses</a></li>
-        <li><a href="./category.html">Tablets</a></li>
-        <li><a href="./category.html">Tops</a></li>
-        <li><a href="./category.html">Vehicle</a></li>
-        <li><a href="./category.html">Womens bags</a></li>
-        <li><a href="./category.html">Womens dresses</a></li>
-        <li><a href="./category.html">Womens jewellery</a></li>
-        <li><a href="./category.html">Womens shoes</a></li>
-        <li><a href="./category.html">Womens watches</a></li>
+      <ul id="lista-categorias">
       </ul>
     </aside>
-    
+
     <main class="principal">
 
       <section class="detalle">
         <div class="detalle-foto">
-          <img src="./img/perfume-08.png" alt="Frasco de So Scandal de Jean Paul Gaultier">
+          <img src="" alt="" id="foto">
         </div>
         <div class="detalle-info">
-          <p class="marca">Jean Paul Gaultier</p>
-          <h1>So Scandal</h1>
-          <p class="precio-grande">$ 109.900</p>
-          <p class="descripcion">Eau de parfum floral y dulce, con flor de azahar, tuberosa y un fondo cremoso de leche. Un perfume audaz, pensado para la noche. Frasco de 80 ml.</p>
-          <p class="dato"><strong>Categoría:</strong> <a href="./category.html">Eau de parfum</a></p>
-          <p class="dato"><strong>Stock:</strong> 14 unidades</p>
-          <ul class="tags">
-            <li>floral</li>
-            <li>dulce</li>
-            <li>nocturno</li>
+          <p class="marca" id="marca"></p>
+          <h1 id="nombre"></h1>
+          <p class="precio-grande" id="precio"></p>
+          <p class="descripcion" id="descripcion"></p>
+          <p class="dato"><strong>Categoría:</strong> <a href="#" id="categoria"></a></p>
+          <p class="dato"><strong>Stock:</strong> <span id="stock"></span></p>
+          <ul class="tags" id="tags">
           </ul>
         </div>
       </section>
 
       <section class="seccion">
         <h2 class="titulo-seccion">Reviews</h2>
-        <article class="review">
-          <p class="rating">★★★★★ 5/5</p>
-          <p>Dura todo el día y el frasco es hermoso. Me lo regalaron y ya lo volví a comprar.</p>
-          <p class="review-datos">Camila R. · 12/08/2026</p>
-        </article>
-        <article class="review">
-          <p class="rating">★★★★☆ 4/5</p>
-          <p>Muy rico, aunque es bastante dulce. Ideal para salir de noche.</p>
-          <p class="review-datos">Martina G. · 29/07/2026</p>
-        </article>
-        <article class="review">
-          <p class="rating">★★★★★ 5/5</p>
-          <p>Llegó rápido y bien embalado. Es mi perfume favorito.</p>
-          <p class="review-datos">Lucía F. · 03/07/2026</p>
-        </article>
+        <div id="reviews">
+        </div>
       </section>
 
     </main>
@@ -110,7 +72,7 @@
 
   <footer class="pie">
     <div class="contenedor">
-      <p class="pie-marca">Aurea · Perfumes de autor</p>
+      <p class="pie-marca">Aurea · Tienda online</p>
       <ul class="integrantes">
         <li>Carnevale Isabella</li>
         <li>Goity Zapico Felicitas</li>
@@ -118,6 +80,5 @@
       </ul>
     </div>
   </footer>
-
 </body>
 </html>
