@@ -19,24 +19,33 @@
       </a>
       <nav>
         <ul class="menu">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./login.html">Login</a></li>
-          <li><a href="./register.html">Registro</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li id="item-login"><a href="login.html">Login</a></li>
+          <li id="item-registro"><a href="register.html">Registro</a></li>
+          <li id="saludo">Bienvenido: <span id="email-usuario"></span></li>
+          <li id="item-logout"><a href="#" id="logout">logout</a></li>
         </ul>
       </nav>
-      <form class="buscador" action="./search-results.html" method="get" value="">
-        <input type="text" name="busqueda" placeholder="Buscar perfumes">
+      <form class="buscador" id="form-buscador" action="search-results.html" method="get">
+        <input type="text" name="busqueda" id="campo-busqueda" placeholder="Buscar productos">
         <button type="submit">Buscar</button>
       </form>
+      <p class="error error-busqueda" id="error-busqueda"></p>
     </div>
   </header>
 
   <div class="contenedor cuerpo">
 
+    <aside class="categorias">
+      <h2>Categorías</h2>
+      <ul id="lista-categorias">
+      </ul>
+    </aside>
+
     <main class="principal">
 
       <section class="centrado">
-        <form class="formulario" action="./login.html" method="get" value="">
+        <form class="formulario" id="form-registro" action="login.html" method="get">
           <h1 class="titulo-seccion">Crear cuenta</h1>
           <label for="email">Email</label>
           <input type="email" id="email" name="email" class="control">
@@ -48,8 +57,9 @@
             <input type="checkbox" id="terminos" name="terminos">
             <label for="terminos">Acepto términos y condiciones</label>
           </p>
+          <p class="error error-form" id="error-registro"></p>
           <button type="submit" class="boton-lleno">Registrarme</button>
-          <a href="./login.html" class="link-form">Ya tengo una cuenta</a>
+          <a href="login.html" class="link-form">Ya tengo una cuenta</a>
         </form>
       </section>
 
@@ -59,7 +69,7 @@
 
   <footer class="pie">
     <div class="contenedor">
-      <p class="pie-marca">Aurea · Perfumes de autor</p>
+      <p class="pie-marca">Aurea · Tienda online</p>
       <ul class="integrantes">
         <li>Carnevale Isabella</li>
         <li>Goity Zapico Felicitas</li>
@@ -67,6 +77,5 @@
       </ul>
     </div>
   </footer>
-
 </body>
 </html>
