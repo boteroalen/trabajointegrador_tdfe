@@ -376,6 +376,30 @@ h3 {
   font-size: 15px;
 }
 
+#saludo {
+  display: none;
+  color: #6f6458;
+}
+
+#item-logout {
+  display: none;
+}
+
+.error {
+  color: #a3402b;
+  font-size: 14px;
+}
+
+.error-busqueda {
+  width: 100%;
+  text-align: right;
+  margin-top: 6px;
+}
+
+.error-form {
+  margin-bottom: 12px;
+}
+
 @media (max-width: 900px) {
   .tarjeta {
     width: 31.33%;
