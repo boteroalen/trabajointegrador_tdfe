@@ -13,6 +13,6 @@ formLogin.addEventListener('submit', function (event) {
     errorLogin.innerText = 'La contraseña debe tener al menos 6 caracteres';
   } else {
     localStorage.setItem('email', campoEmail.value);
-    window.location.href = 'index.html';
+    this.submit();
   }
 });

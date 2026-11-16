@@ -15,6 +15,6 @@ formRegistro.addEventListener('submit', function (event) {
   } else if (passwordRegistro.value != password2Registro.value) {
     errorRegistro.innerText = 'Las contraseñas no coinciden';
   } else {
-    window.location.href = 'login.html';
+    this.submit();
   }
 });
