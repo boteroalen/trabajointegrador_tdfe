@@ -8,6 +8,7 @@ formBuscador.addEventListener('submit', function (event) {
     errorBusqueda.innerText = 'El campo de búsqueda no puede estar vacío';
   } else if (campoBusqueda.value.length < 3) {
     errorBusqueda.innerText = 'El término buscado debe tener al menos 3 caracteres';
+  } else {
+    this.submit();
   }
 });
-
