@@ -37,7 +37,7 @@ fetch('https://dummyjson.com/products/' + idProducto)
       reviews += `<article class="review">
         <p class="rating">Rating: ${review.rating}/5</p>
         <p>${review.comment}</p>
-        <p class="review-datos">${review.reviewerName} · ${review.date.slice(0, 10)}</p>
+        <p class="review-datos">${review.reviewerName} · ${new Date(review.date).toLocaleDateString('es-AR')}</p>
       </article>`;
     }
     document.querySelector('#reviews').innerHTML = reviews;

@@ -7,7 +7,7 @@ fetch('https://dummyjson.com/products/category/smartphones')
   })
   .then(function (data) {
     let productos = '';
-    for (let i = 0; i < data.products.length; i++) {
+    for (let i = 0; i < data.products.length && i < 10; i++) {
       let producto = data.products[i];
       productos += `<article class="tarjeta">
           <div class="foto">
@@ -31,7 +31,7 @@ fetch('https://dummyjson.com/products/category/mobile-accessories')
   })
   .then(function (data) {
     let productos = '';
-    for (let i = 0; i < data.products.length; i++) {
+    for (let i = 0; i < data.products.length && i < 10; i++) {
       let producto = data.products[i];
       productos += `<article class="tarjeta">
           <div class="foto">
